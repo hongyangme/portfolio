@@ -1,0 +1,452 @@
+@font-face {
+    font-family: 'pretendard-medium';
+    src: url('../font/Pretendard-Medium.woff2') format('woff2');
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'pretendard';
+    src: url('../font/Pretendard-Light.woff2') format('woff2');
+    font-weight: 100; 
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'NeueFreigeistTest-Light';
+    src: url('../font/NeueFreigeistTest-Light.otf') format('opentype');
+    font-style: normal;
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: 'NeueFreigeistTest-Medium';
+    src: url('../font/NeueFreigeistTest-Medium.otf') format('opentype');
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'NeueFreigeistTest-SemiBold';
+    src: url('../font/NeueFreigeistTest-SemiBold.otf') format('opentype');
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'SpoqaHanSansNeo-Light';
+    src: url('../font/SpoqaHanSansNeo-Light.otf') format('opentype');
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('../font/SpoqaHanSansNeo-Regular.otf') format('opentype');
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'NeoDunggeunmoPro';
+    src: url('../font/NeoDunggeunmoPro-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100;
+  }
+
+/* 스타일 */
+html{
+    font-size: 1vw;
+}
+body{
+    background-image: url(../img/bg.jpg);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'pretendard', 'san-serif';
+    box-sizing: border-box;
+    word-break: keep-all;
+    color: #212121;
+}
+
+a{
+    text-decoration: none;
+    color: #212121;
+}
+li{
+    list-style: none;
+}
+
+/* 메인 */
+#wrap{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+/* 헤더 */
+header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+}
+nav{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* padding: 0 40px; */
+    right: 2.5rem;
+    top: 0;
+    position: absolute;
+}
+.gnb{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.gnb li{
+    height: 1.01vw;
+    overflow: hidden;
+    float: left;
+    margin-right: 2rem;
+}
+.gnb-a{
+
+}
+.gnb-b{
+
+}
+.gnb-c{
+    margin-right: 0 !important;
+}
+.gnb li a{
+    font-family: 'NeueFreigeistTest-SemiBold';
+    font-size: 0.9vw;
+    line-height: 0.9;
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+.copy{
+    font-family: 'NeueFreigeistTest-SemiBold';
+    font-size: 0.9vw;
+    display: block;
+    transition: 0.5s;
+}
+
+.gnb li:hover a,
+.gnb li:hover .copy{
+    transform: translateY(-0.8vw);
+    transition: transform 0.3s ease;
+}
+.logo{
+    width: fit-content;
+    position: absolute;
+    left: 2.5rem;
+    height: 1.01vw;
+    overflow: hidden;
+}
+.logo a{
+    font-family: 'NeueFreigeistTest-SemiBold';
+    font-size: 0.9vw;
+    line-height: 0.9;
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+.logo:hover a,
+.logo:hover .copy{
+    transform: translateY(-0.8vw);
+    transition: transform 0.3s ease;
+}
+
+
+/* 메인 */
+main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.main-txt{}
+    /* width: fit-content;
+    height: fit-content;
+    display: block;
+    position: absolute;
+    top: 8rem;
+    left: 8rem;
+} */
+h1{
+    font-family: 'NeueFreigeistTest-Light';
+    line-height: 1.2;
+    font-weight: 100;
+    display: inline-block;
+    position: absolute;
+    height: fit-content;
+    top: calc(100px + 1.3rem);
+    left: 2.1rem;
+    width: fit-content;
+}
+h1 > div{
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 텍스트 슬라이드 */
+.w {
+    font-family: 'NeueFreigeistTest-Light';
+    font-size: 6vw;
+    line-height: 1;
+    font-weight: 100;
+    white-space: pre;
+    display: inline-block;
+    transform: translateY(100%); 
+    float: left;
+    animation: wave 0.5s forwards;
+}
+.line-1{
+    height: fit-content;
+}
+.line-2{
+    height: fit-content;
+    left: 22rem;
+}
+.line-3{
+    height: fit-content;
+    left: 10rem;
+}
+
+.line-1 .w {
+    animation-delay: calc(0s + var(--i) * 0.033s);
+}
+.line-2 .w {
+    animation-delay: calc(0.6s + var(--i) * 0.022s);
+}
+.line-3 .w {
+    animation-delay: calc(0.8s + var(--i) * 0.011s);
+}
+  
+h1 .and{
+    font-family: 'pretendard';
+}
+.red{
+    color: #D84B2B;
+}
+.hls-container{
+    width: fit-content;
+    height: fit-content;
+    float: left;
+    
+}
+@keyframes wave {
+    0% { transform: translateY(100px); opacity: 0; }
+    30%{ transform: translateY(105px); opacity: 1; }
+    100% { transform: translateY(-2px); opacity: 1; }
+}
+
+/* 하이라이트 */
+/* .hls{
+    cursor: pointer;
+
+}
+.hls-container:hover{
+    transition: all 1s;
+    animation: highlights 5s infinite;
+}
+.hls-container:hover .hls{
+    color: white;
+}
+@keyframes highlights{
+    0%,100%{
+        background-color: #239DAA;
+        color: white;
+    }
+    33%{
+        background-color: #236daa;
+        color: white;
+    }
+    66%{
+        background-color: #D84B2B;
+        color: white;
+    }
+} */
+
+/* 컨택 박스 */
+.me-box{
+    width: 22%;
+    height: 30%;
+    position: absolute;
+    top: 27rem;
+    left: 27%;
+    cursor: pointer;
+}
+.me-box > img{
+    width: 9vw;
+    position: absolute;
+    right: 0;
+    top: 17%;
+}
+.me-box > span{
+    background-color: #239DAA;
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    animation: shake infinite alternate 2s;
+    transition: transform 1s;
+}
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+    10% {
+        transform: translate(0, -10px) scaleX(0.8); 
+    }
+    20% {
+        transform: translate(0, 0) scale(1.1, 0.8);
+    }
+    30% {
+        transform: translate(0, -5px) scaleX(0.9); 
+    }
+    40% {
+        transform: translate(0, 0) scale(1.1, 0.8); 
+    }
+    50% {
+        transform: translate(0, -5px) scaleX(0.9); 
+    }
+    60% {
+        transform: translate(0, 0) scale(1.1, 0.8); 
+    }
+    70% {
+        transform: translate(0, 0) scale(1); 
+    }
+}
+.me-box .contact{
+    background-color: #239DAA;
+    width: 13vw;
+    height: 5.5vw;
+    border-radius: calc(5vw / 10);
+    top: 33%;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 0.4vw 1vw;
+    line-height: 1.5;
+    transition: 0.45s ease;
+    transform: scale(0);
+    transform-origin: top right;
+    opacity: 0;
+    cursor: default;
+}
+.me-box:hover .contact{
+    transform: scale(1);
+    opacity: 1;
+}
+.me-box:hover span{
+    animation: none;
+    transform: scale(0.8);
+}
+.adress{
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+.adress img{
+    float: left;
+    margin-right: 0.5vw;
+    width: 1.3vw;
+}
+.contact h3{
+    color: #ffffff;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-weight: 100;
+    font-size: 0.9vw;
+    margin-bottom: 0.3vw;
+}
+/* .contact:hover h3{
+    animation: blink 1s infinite;
+} */
+/* @keyframes blink{
+    0%, 30%, 50%{
+        opacity: 1;
+    }
+    10%, 20% {
+        opacity: 0; 
+    }
+} */
+
+.adress p{
+    display: inline-block;
+    float: left;
+    font-size: 0.8vw;
+    color: #ffffff;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-weight: 100;
+}
+
+/* 바로가기 */
+.go-page{
+    position: absolute;
+    left: 73em;
+    top: 26.8rem;
+}
+
+.page-nav{
+
+}
+.page-nav li{
+    margin-bottom: 1em;
+
+}
+.page-nav li a{
+    display: inline-block;
+    padding: 0.6vw 1.1vw;
+    background-color: rgba(255, 255, 255, 0.65);
+    /* border: 1px solid #3e3e3e; */
+    box-shadow: 5px 5px 0 -2px  #d2d2d2;
+    border-radius: 20px;
+    font-size: 0.9vw;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+.page-nav li a > img{
+    float: left;
+    margin-right: 0.5vw;
+    width: 1.8vw;
+    height: 1.8vw;
+    display: none;
+}
+.page-nav li a:hover{
+    border-radius: 10px;
+    background-color: #D84B2B;
+    padding: 0.33vw 1.1vw 0.33vw 0.6vw;
+    color: #ffffff;
+}
+.page-nav li a:hover img{
+    display: block;
+}
+.go-q{
+    position: absolute;
+    left: 57rem;
+    top: 27.5rem;
+    height: 1.01vw;
+    overflow: hidden;
+}
+.go-q p{
+    font-family: 'NeueFreigeistTest-Medium';
+    font-size: 1vw;
+    line-height: 1.01vw;
+    transform: translate(0);
+    transition: transform 0.3s ease;
+}
+.copy2{
+    font-family: 'NeueFreigeistTest-SemiBold';
+    font-size: 1vw;
+    display: block;
+    text-decoration: underline;
+}
+.go-q:hover *{
+    transform: translateY(-1.25vw);
+    transition: transform 0.3s ease;
+}
