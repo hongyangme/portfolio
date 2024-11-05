@@ -201,6 +201,7 @@ h1 > div{
     display: inline-block;
     position: relative;
     overflow: hidden;
+    padding: 7px 5px;
 }
 br{
     height: 0;
@@ -219,27 +220,41 @@ br{
     text-transform: uppercase;
     cursor: default;
 }
+.space{
+    font-family: 'NeueFreigeistTest-Medium';
+    font-size: 5vw;
+    line-height: 1;
+    font-weight: 100;
+    white-space: pre;
+    display: inline-block;
+    transform: translateY(100%); 
+    float: left;
+    animation: wave 0.5s forwards;
+    text-transform: uppercase;
+    cursor: default;
+}
 .line-1{
     height: fit-content;
     transition: 0.5s;
 }
-.line-1:hover{
+/* .line-1:hover{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    transform: scale(1.1);
-}
+    transform: scale(1.03);
+} */
 .line-4{
     height: fit-content;
     transition: 0.5s;
 }
-.line-4:hover{
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+.ef{
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
 }
 .line-2{
     height: fit-content;
 }
+
 .line-3{
     height: fit-content;
 }
@@ -259,7 +274,12 @@ br{
 .line-4 .w {
     animation-delay: calc(1s + var(--i) * 0.011s);
 }
-  
+
+.w:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    transform: scale(1.05) !important;
+}
 h1 .and{
     font-family: 'pretendard';
 }
@@ -295,7 +315,7 @@ h1 .and{
     height: 0.8vw;
     border-radius: 50%;
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     animation: shake infinite alternate 2s;
     transition: transform 1s;
@@ -306,7 +326,7 @@ h1 .and{
     width: 13vw;
     height: 5.5vw;
     border-radius: calc(5vw / 10);
-    top: 42%;
+    top: 48%;
     left: 0;
     position: absolute;
     display: flex;
@@ -319,10 +339,7 @@ h1 .and{
     opacity: 0;
     cursor: default;
 }
-.me-box:hover .contact{
-    transform: scale(1);
-    opacity: 1;
-}
+
 .me-box:hover span{
     animation: none;
     transform: scale(0.8);
