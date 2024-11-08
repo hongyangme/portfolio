@@ -16,25 +16,4 @@ $(document).ready(function(){
         });
     });
 
- // 백그라운드
-
-//  const videoElement = document.getElementById('bgVideo');
-//  let mouseTimeout;
-//  const stopDelay = 100;  // 마우스가 멈춘 후 1초 뒤에 비디오를 정지
-
-//  // 마우스가 움직일 때 비디오를 재생
-//  document.addEventListener('mousemove', function () {
-//      // 비디오가 멈춰있으면 재생 시작
-//      if (videoElement.paused) {
-//          videoElement.play();
-//      }
-
-//      // 마우스가 움직일 때마다 이전의 timeout을 clear하고 새로 설정
-//      clearTimeout(mouseTimeout);
-
-//      // 마우스가 멈추면 1초 뒤에 비디오를 정지
-//      mouseTimeout = setTimeout(function () {
-//          videoElement.pause();
-//      }, stopDelay);
-//  });
 });
