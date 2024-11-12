@@ -20,7 +20,7 @@ $(document).ready(function(){
             }
         });
     }, {
-        threshold: 0.3
+        threshold: 0.1
     });
     // aside 관찰
     const asideElement = document.querySelector('aside');
