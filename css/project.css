@@ -1,0 +1,342 @@
+@font-face {
+    font-family: 'pretendard-medium';
+    src: url('../font/Pretendard-Medium.woff2') format('woff2');
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'helvetica';
+    src: url('../font/Helvetica.ttf') format('truetype');
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'helvetica-Bold';
+    src: url('../font/Helvetica-Bold.ttf') format('truetype');
+    font-style: normal;
+  }
+  .doto {
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "ROND" 0;
+  }
+  @font-face {
+    font-family: 'Orbitron-Medium';
+    src: url('../font/Orbitron-Medium.ttf') format('truetype');
+    font-style: normal;
+  }
+
+/* 스타일 */
+html{
+    font-size: 16px;
+}
+body{
+    display: flex;
+    align-items: center;
+    background: url('../img/mesh-gradient.png');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+#wrap{
+    min-height: 50%;
+    width: 100%;
+    height:fit-content;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'pretendard-medium', 'san-serif';
+    box-sizing: border-box;
+    word-break: keep-all;
+    color: #212121;
+}
+
+a{
+    text-decoration: none;
+    color: #212121;
+}
+li{
+    list-style: none;
+}
+::selection{
+    background-color: #ffc3a9;
+}
+/* 메인 */
+/* 헤더 */
+header{
+    width: 100vw;
+    height: 5.2vw;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    backdrop-filter: blur(100px);
+}
+nav{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    top: 0;
+    position: absolute;
+}
+.gnb{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.gnb li{
+    height: 1.01vw;
+    overflow: hidden;
+    float: left;
+    margin-right: 2rem;
+}
+.gnb-c{
+    margin-right: 0 !important;
+}
+.gnb li a{
+    font-family: 'helvetica-Bold';
+    font-size: 0.83vw;
+    line-height: 1;
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+.copy{
+    font-family: 'helvetica-Bold';
+    font-size: 0.83vw;
+    display: block;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+.gnb li:hover a,
+.gnb li:hover .copy{
+    transform: translateY(-0.83vw);
+    transition: transform 0.3s ease;
+}
+.logo{
+    width: fit-content;
+    position: absolute;
+    left: 2.5rem;
+    height: 1.01vw;
+    overflow: hidden;
+}
+.logo a{
+    font-family: 'helvetica-Bold';
+    font-size: 0.83vw;
+    line-height: 1;
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+.logo:hover a,
+.logo:hover .copy{
+    transform: translateY(-0.83vw);
+    transition: transform 0.3s ease;
+}
+.go-q{
+    position: absolute;
+    height: 0.83vw;
+    overflow: hidden;
+    right: 2.5rem;
+}
+.go-q p{
+    font-family: 'helvetica-Bold';
+    font-size: 0.83vw;
+    line-height: 0.83vw;
+    transform: translate(0);
+    transition: transform 0.3s ease;
+}
+.copy2{
+    font-family: 'helvetica-Bold';
+    font-size: 0.83vw;
+    display: block;
+    text-decoration: underline;
+    text-align: center;
+}
+.go-q:hover *{
+    transform: translateY(-0.83vw);
+    transition: transform 0.3s ease;
+}
+
+main{
+    width: 72vw;
+    height: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+.img-box{
+    width: 25vw;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+section{
+    width: 100%;
+    height: calc(100vh);
+    margin: 0 auto;
+    position: relative;
+}
+.section-wrap{
+    margin-block-end: 15.6vw;
+    margin-block-start: 15.6vw;
+    width: 100%;
+    height: 20vw;
+    position: absolute;
+}
+.pc-mockup-box{
+    width: 100%;
+    height: 100%;
+}
+.pc-mockup-img{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+    z-index: 1;
+}
+.pc-mockup-inside{
+    width: 94%;
+    height: 77%;
+    position: absolute;
+    left: 0.75vw;
+    top: 0.75vw;
+    overflow: hidden;
+}
+.pc-mockup-inside > a{
+    width: 100%;
+    height: 100%;
+}
+.pc-mockup-inside > a > img{
+    width: 100%;
+}
+.pc-mockup-inside:hover a > img{
+    animation: mockup-slide 5s forwards;
+}
+@keyframes mockup-slide{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(calc(-100% + 15.5vw));
+    }
+}
+
+.page-info{
+    width: 33vw;
+    height: 90%;
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(30%);
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+.page-info a{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 3vw;
+    display: flex;
+    align-items: center;
+}
+h2{
+    font-size: 1.25vw;
+    float: left;
+}
+.page-info > a > img{
+    float: right;
+    width: 1.25vw;
+    margin-left: 2vw;
+    opacity: 0;
+    transition: 0.5s;
+}
+.page-info > p{
+    white-space: pre-line;
+    line-height: 2;
+    font-size: 0.83vw;
+    margin-bottom: 2vw;
+}
+
+.page-info a:hover img{
+    opacity: 1;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1, 10.42vw 20vw);
+    grid-template-rows: repeat(4, 2vw);
+    float: left;
+    align-items: center;
+    bottom: 0;
+}
+.grid-info{
+    font-size: 0.83vw;
+    font-family: 'pretendard-medium';
+    
+}
+.grid-txt{
+    font-weight: 600;
+    font-size: 0.83vw;
+}
+
+/* 푸터 */
+footer{
+    width: 100%;
+    height: 10.42vw;
+}
+hr{
+    width: 90%;
+    border: 0;
+    height: 1px;
+    background-color: #2C5054;
+    margin: 0 auto;
+    margin-bottom: 4vw;
+}
+.copyright{
+    font-size: 0.83vw;
+    white-space: pre-line;
+    text-align: center;
+    line-height: 2;
+    color: #2C5054;
+}
+
+/* aside */
+aside{
+    position: fixed;
+    right:2rem;
+    top: 12%;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    height: 8vw;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.menu li{
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 0.83vw;
+    cursor: pointer;
+    padding: 0.5vw 1vw;
+    margin-bottom: 0.5vw ;
+    border-radius: 50px;
+    text-align: center;
+    width: fit-content;
+    display: inline-block;
+}
+.menu li a{
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+}
+.on{
+    background-color: rgba(116, 190, 201, 0.3)  !important;
+}

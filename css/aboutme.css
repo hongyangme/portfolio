@@ -67,7 +67,7 @@ li{
 /* 헤더 */
 header{
     width: 100vw;
-    height: 100px;
+    height: 5.2vw;
     position: fixed;
     z-index: 3;
     display: flex;
@@ -302,67 +302,29 @@ h1{
 .grid-bar:nth-child(6) > div{
     width: 80%;
     height: 100%;
-    animation: scaleAni80 0.7s ease-in-out;
 }
 .grid-bar:nth-child(8) > div{
     width: 70%;
     height: 100%;
-    animation: scaleAni70 0.7s ease-in-out;
 }
 .grid-bar:nth-child(10) > div{
     width: 90%;
     height: 100%;
-    animation: scaleAni90 0.7s ease-in-out;
 }
 .grid-bar:nth-child(12) > div{
     width: 80%;
     height: 100%;
-    animation: scaleAni80 0.7s ease-in-out;
 }
 .grid-bar:nth-child(14) > div{
     width: 80%;
     height: 100%;
-    animation: scaleAni80 0.7s ease-in-out;
 }
 .grid-bar-2{
     background-color: rgba(116, 190, 201, 0.7);
     border-radius: 15px;
 }
 .grid-bar:hover .grid-bar-2{
-    animation: scaleAni 0.7s ease-in-out;
     transform-origin: left;
-}
-@keyframes scaleAni {
-    0% {
-        width: 10%;
-    }
-    100% {
-        width: 100%;
-    }
-}
-@keyframes scaleAni70 {
-    0% {
-        width: 10%;
-    }
-    100% {
-        width: 70%;
-    }
-}
-@keyframes scaleAni80 {
-    0% {
-        width: 10%;
-    }
-    100% {
-        width: 80%;
-    }
-}
-@keyframes scaleAni90 {
-    0% {
-        width: 10%;
-    }
-    100% {
-        width: 90%;
-    }
 }
 
 .grid-3{
