@@ -27,5 +27,33 @@ $(document).ready(function(){
     observer.observe(asideElement);
 
 
-    //스크롤바 이슈
+    //마우스 커스텀
+    const customCursor = document.querySelector(".cursor-wrap");
+    $(document).mousemove(function(e){
+        gsap.to(customCursor,{
+            x: e.clientX,
+            y: e.clientY,
+            xPercent: -50,
+            yPercent: -50,
+            duration: 0.1,
+            opacity: 1
+        });        
+    })
+
+    // 마우스 a:hover 이벤트
+    $("body a").hover(
+        function(){
+            gsap.to(customCursor,{
+                scale: 0.5,
+                duration: 0.3
+            });
+        },
+        function(){
+            gsap.to(customCursor,{
+                scale: 1,
+                duration: 0.3
+            });
+        }
+    )
+
 });

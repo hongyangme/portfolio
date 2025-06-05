@@ -5,6 +5,9 @@ $(document).ready(function(){
     $(".menu > li").eq(0).addClass("on");
     $(".menu > li > a").eq(0).addClass("on-a");
 
+
+
+    
     $("html").animate({scrollTop : 0}, 10);
 
     // wheel 이벤트: 페이지 전환 방지 및 스크롤 방향 처리
@@ -49,7 +52,8 @@ $(document).ready(function(){
             var sectionBottom = sectionTop + $(this).outerHeight(); 
 
             if (scroll >= sectionTop - inHeight * 0.5 && scroll < sectionBottom - inHeight * 0.5) {
-                $(".menu > li").eq(index).addClass("on");
+                $(".menu > li").removeClass().eq(index).addClass("on");
+                $(".menu > li > a").removeClass().eq(index).addClass("on-a");
             }
         });
     });
@@ -70,20 +74,6 @@ $(document).ready(function(){
 
         console.log("Clicked Section Index: ", i, "Scroll Position: ", ht);
     });
-
-
-
-    //여기서부턴 슬라이드
-    //슬라이드1
-    // $('.img-box').css({'transform': 'translateX(0%)',
-    //     'opacity' : '1'
-    // })
-    // setTimeout(function(){
-    //     $('.page-info').css({'transform': 'translateX(0%)',
-    //         'opacity' : '1'
-    //     })
-    // },100);
-
 
     //observer 감지
     const observer = new IntersectionObserver((entries, observer) => {
@@ -113,4 +103,34 @@ $(document).ready(function(){
     sections.forEach(section => {
         observer.observe(section); 
     });
+
+        //마우스 커스텀
+    const customCursor = document.querySelector(".cursor-wrap");
+    $(document).mousemove(function(e){
+        gsap.to(customCursor,{
+            x: e.clientX,
+            y: e.clientY,
+            xPercent: -50,
+            yPercent: -50,
+            duration: 0.1,
+            opacity: 1
+        });        
+    })
+
+    // 마우스 a:hover 이벤트
+    $("body a").hover(
+        function(){
+            gsap.to(customCursor,{
+                scale: 0.5,
+                duration: 0.3
+            });
+        },
+        function(){
+            gsap.to(customCursor,{
+                scale: 1,
+                duration: 0.3
+            });
+        }
+    )
+
 });

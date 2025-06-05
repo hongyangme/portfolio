@@ -6,150 +6,146 @@
     <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="./js/aboutme.js"></script>
     <link rel="stylesheet" href="./css/aboutme.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@519&family=Noto+Sans+KR&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>홍찬희 포트폴리오</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
     <div id="wrap">
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                HONG CHANHEE<span class="copy"><br>HONG CHANHEE</span>
-            </a>
-        </div>
-        <nav>
-            <ul class="gnb">
-                <li class="gnb-a"><a href="aboutme.html">ABOUT ME
-                    <span class="copy"><br>ABOUT ME</span>
-                </a></li>
-                <li class="gnb-b"><a href="project.html">PROJECT
-                    <span class="copy"><br>PROJECT</span>
-                </a></li>
-                <li class="gnb-c"><a href="#">GALLARY
-                    <span class="copy"><br>GALLARY</span>
-                </a></li>
-            </ul>
-        </nav>
-        <div class="go-q">
-            <p>Explore my project!</p>
-            <span class="copy2">Thank you so much!</span>
-        </div>
-    </header>
-    <main>
-        <div class="profile-card">
-            <div class="avata">
-                <img src="./img/me.png" alt="아바타">
-            </div>
-            <h1>트렌드에 발맞추며
-                이유 있는 디자인을 구현합니다
+        <header>
+            <h1 class="logo">
+                <a href="index.html">
+                    Hong chanhee<span class="copy"><br>Hong chanhee</span>
+                </a>
             </h1>
+            <nav>
+                <ul class="gnb">
+                    <li class="gnb-a"><a href="aboutme.html">about me ,
+                        <span class="copy"><br>about me ,</span>
+                    </a></li>
+                    <li class="gnb-b"><a href="project.html">works ,
+                        <span class="copy"><br>works ,</span>
+                    </a></li>
+                    <li class="gnb-c"><a href="#">gallary
+                        <span class="copy"><br>gallary</span>
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="go-q">
+                <p>Explore my project!</p>
+                <span class="copy2">Thank you so much!</span>
+            </div>
+        </header>
+        <main>
+            <div class="profile-card">
+            </div>
+            <div class="me-box-wrap">
+                <div class="me-box">
+                    <div class="grid-title">
+                        <small class="num">O1</small>
+                        <p>PROFILE</p>
+                    </div>
+                    <div class="grid-1">
+                        <p class="grid-txt">NAME</p>
+                        <p class="grid-info">홍찬희</p>
+                        <p class="grid-txt">BIRTH</p>
+                        <p class="grid-info">1998. 09. 25</p>
+                        <p class="grid-txt">E-MAIL</p>
+                        <p class="grid-info">canxi925@gmail.com</p>
+                        <p class="grid-txt">LOCATION</p>
+                        <p class="grid-info">서울, 대한민국</p>
+                    </div>
+                </div>
+                <div class="me-box">
+                    <div class="grid-title">
+                        <small class="num">O2</small>
+                        <p>SKILLS</p>
+                    </div>
+                    <div class="grid-2">
+                        <p class="grid-txt">HTML</p>
+                        <div class="grid-bar">
+                            <div class="grid-bar-2"></div>
+                        </div>
+                        <p class="grid-txt">CSS</p>
+                        <div class="grid-bar">
+                            <div class="grid-bar-2"></div>
+                        </div>
+                        <p class="grid-txt">JQUERY</p>
+                        <div class="grid-bar">
+                            <div class="grid-bar-2"></div>
+                        </div>
+                        <p class="grid-txt">JAVA SCRIPT</p>
+                        <div class="grid-bar">
+                            <div class="grid-bar-2"></div>
+                        </div>
+                        <p class="grid-txt">PHOTOSHOP</p>
+                        <div class="grid-bar">
+                            <div class="grid-bar-2"></div>
+                        </div>
+                        <p class="grid-txt">ILLUSTRATOR</p>
+                        <div class="grid-bar">
+                            <div class="grid-bar-2"></div>
+                        </div>
+                        <p class="grid-txt">FIGMA</p>
+                        <div class="grid-bar">
+                            <div class="grid-bar-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="me-box">
+                    <div class="grid-title">
+                        <small class="num">O3</small>
+                        <p>CERTIFICATION</p>
+                    </div>
+                    <div class="grid-3">
+                        <p class="grid-info">ㅡ 컴퓨터그래픽스 운용기능사 (2024. 12)</p>
+                        <p class="grid-info">ㅡ 웹디자인 기능사 (2024. 12)</p>
+                    </div>
+                </div>
+                <div class="me-box">
+                    <div class="grid-title">
+                        <small class="num">O4</small>
+                        <p>SO I CAN</p>
+                    </div>
+                    <div class="grid-4">
+                        <p class="grid-info">ㅡ 웹 표준을 준수하여 시멘트 마크업을 작성하고 크로스 브라우징 체크를 진행합니다.</p>
+                        <p class="grid-info">ㅡ 포토샵 및 일레스트레이터를 활용하여 상세페이지를 비롯한 다양한 디자인 작업이 가능합니다.</p>
+                        <p class="grid-info">ㅡ 피그마를 활용하여 UI/UX 작업 및 프로토 타이핑이 가능합니다. </p>
+                    </div>
+                </div>
+            </div>
+            <aside>
+                <div class="aside-box">
+                    <div class="grid-title2">
+                        <p>AS A DESIGNER <small class="num">✤</small></p>
+                    </div>
+                    <p>최신 트렌드를 놓치지 않고 발 빠르게 움직여요.
+    사용성과 구현을 생각하며 효율적인 디자인을 찾아요.</p>
+                </div>
+                <div class="aside-box">
+                    <div class="grid-title2">
+                        <p>AS A PERSON <small class="num">✤</small></p>
+                    </div>
+                    <p>새로운 것을 탐색하고 지식을 쌓는 것을 좋아해요.
+                        음악, 패션, 인테리어, 영화 등 문화예술에 관심이 많아요.</p>
+                </div>
+                <div class="aside-box">
+                    <div class="grid-title2">
+                        <p>AS A COWORKER <small class="num">✤</small></p>
+                    </div>
+                    <p>상대를 배려하는 방법을 알고 있어요.
+                        적극적으로 소통하며 효율적인 방안과 보완점을 모색해요.</p>
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <hr>
+            <p class="copyright">본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.
+                © 2025 Hong Chanhee. All Rights Reserved.</p>
+        </footer>
+        <div class="cursor-wrap">
+            <div class="cursor-inner">
+                <div class="cursor"></div>
+            </div>
         </div>
-        <div class="me-box-wrap">
-            <div class="me-box">
-                <div class="grid-title">
-                    <small class="num">O1</small>
-                    <p>PROFILE</p>
-                </div>
-                <div class="grid-1">
-                    <p class="grid-txt">NAME</p>
-                    <p class="grid-info">홍찬희</p>
-                    <p class="grid-txt">BIRTH</p>
-                    <p class="grid-info">1998. 09. 25</p>
-                    <p class="grid-txt">E-MAIL</p>
-                    <p class="grid-info">canxi925@gmail.com</p>
-                    <p class="grid-txt">LOCATION</p>
-                    <p class="grid-info">서울, 대한민국</p>
-                </div>
-            </div>
-            <div class="me-box">
-                <div class="grid-title">
-                    <small class="num">O2</small>
-                    <p>SKILLS</p>
-                </div>
-                <div class="grid-2">
-                    <p class="grid-txt">HTML</p>
-                    <div class="grid-bar">
-                        <div class="grid-bar-2"></div>
-                    </div>
-                    <p class="grid-txt">CSS</p>
-                    <div class="grid-bar">
-                        <div class="grid-bar-2"></div>
-                    </div>
-                    <p class="grid-txt">JQUERY</p>
-                    <div class="grid-bar">
-                        <div class="grid-bar-2"></div>
-                    </div>
-                    <p class="grid-txt">JAVA SCRIPT</p>
-                    <div class="grid-bar">
-                        <div class="grid-bar-2"></div>
-                    </div>
-                    <p class="grid-txt">PHOTOSHOP</p>
-                    <div class="grid-bar">
-                        <div class="grid-bar-2"></div>
-                    </div>
-                    <p class="grid-txt">ILLUSTRATOR</p>
-                    <div class="grid-bar">
-                        <div class="grid-bar-2"></div>
-                    </div>
-                    <p class="grid-txt">FIGMA</p>
-                    <div class="grid-bar">
-                        <div class="grid-bar-2"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="me-box">
-                <div class="grid-title">
-                    <small class="num">O3</small>
-                    <p>CERTIFICATION</p>
-                </div>
-                <div class="grid-3">
-                    <p class="grid-info">ㅡ 컴퓨터그래픽스 운용기능사 (2024. 11)</p>
-                    <p class="grid-info">ㅡ 웹디자인 기능사 (2024. 11)</p>
-                </div>
-            </div>
-            <div class="me-box">
-                <div class="grid-title">
-                    <small class="num">O4</small>
-                    <p>SO I CAN</p>
-                </div>
-                <div class="grid-4">
-                    <p class="grid-info">ㅡ 웹 표준을 준수하여 시멘트 마크업을 작성하고 크로스 브라우징 체크를 진행합니다.</p>
-                    <p class="grid-info">ㅡ 포토샵 및 일레스트레이터를 활용하여 상세페이지를 비롯한 다양한 디자인 작업이 가능합니다.</p>
-                    <p class="grid-info">ㅡ 피그마를 활용하여 UI/UX 작업 및 프로토 타이핑이 가능합니다. </p>
-                </div>
-            </div>
-        </div>
-        <aside>
-            <div class="aside-box">
-                <div class="grid-title">
-                    <p>AS A DESIGNER <small class="num">✤</small></p>
-                </div>
-                <p>최신 트렌드를 놓치지 않고 발 빠르게 움직여요.
-사용성과 구현을 생각하며 효율적인 디자인을 찾아요.</p>
-            </div>
-            <div class="aside-box">
-                <div class="grid-title">
-                    <p>AS A PERSON <small class="num">✤</small></p>
-                </div>
-                <p>새로운 것을 탐색하고 지식을 쌓는 것을 좋아해요.
-                    음악, 패션, 인테리어, 영화 등 문화예술에 관심이 많아요.</p>
-            </div>
-            <div class="aside-box">
-                <div class="grid-title">
-                    <p>AS A COWORKER <small class="num">✤</small></p>
-                </div>
-                <p>상대를 배려하는 방법을 알고 있어요.
-                    적극적으로 소통하며 효율적인 방안과 보완점을 모색해요.</p>
-            </div>
-        </aside>
-    </main>
-    <footer>
-        <hr>
-        <p class="copyright">본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.
-            © 2025 Hong Chanhee. All Rights Reserved.</p>
-    </footer>
-</div>
+    </div>
 </body>
 </html>
