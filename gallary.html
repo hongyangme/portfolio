@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="./js/gallary.js"></script>
+    <title>gallary</title>
+    <link rel="stylesheet" href="./css/gallary.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="logo">
+                <a href="index.html">
+                    Hong chanhee<span class="copy"><br>Hong chanhee</span>
+                </a>
+            </h1>
+            <nav>
+                <ul class="gnb">
+                    <li class="gnb-a"><a href="aboutme.html">about me ,
+                        <span class="copy"><br>about me ,</span>
+                    </a></li>
+                    <li class="gnb-b"><a href="project.html">works ,
+                        <span class="copy"><br>works ,</span>
+                    </a></li>
+                    <li class="gnb-c"><a href="gallary.html">gallary
+                        <span class="copy"><br>gallary</span>
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="go-q">
+                <p>Explore my project!</p>
+                <span class="copy2">Thank you so much!</span>
+            </div>
+        </header>
+        <main>
+            <div class="img-wrap">
+                <div class="img-box-1" data-target="zoom-1">
+                    <img src="./img/poster-flower2.jpg" alt="x배너_1400">
+                    <div class="box-txt"><p>FESTIVAL POSTER</p></div>
+                </div>
+                <div class="img-box-2" data-target="zoom-2">
+                    <img src="./img/x배너_1400-3.jpg" alt="poster-flower">
+                    <div class="box-txt"><p>X-BANNER</p></div>
+                </div>
+                <div class="img-box-3" data-target="zoom-3">
+                    <img src="./img/poster-moodindigo.jpg" alt="poster2">
+                    <div class="box-txt"><p>MOVIE POSTER</p></div>
+                </div>
+                <div class="img-box-4" data-target="zoom-4">
+                    <img src="./img/leaflet-2set-2.jpg" alt="leaflet">
+                    <div class="box-txt"><p>LEAFLET</p></div>
+                </div>
+            </div>
+            <div class="dott-wrap">
+                <div class="dott-box-1">
+                    <img src="./img/dott/kitty2.png" alt="냥이">
+                </div>
+                <div class="dott-box-2">
+                    <img src="./img/dott/shining2.png" alt="하트">
+                </div>
+                <div class="dott-box-5">
+                    <img src="./img/dott/butterfly2.gif" alt="토성">
+                </div>
+            </div>
+        </main>
+        <div class="img-zoom-bg">
+            <div class="img-zoom-box zoom-1">
+                <img src="./img/festival-zoom.jpg" alt="포스터 상세">
+                <p>ESC to close</p>
+            </div>
+            <div class="img-zoom-box zoom-2">
+                <img src="./img/x배너-zoom.jpg" alt="X배너 상세">
+                <p>ESC to close</p>
+            </div>
+            <div class="img-zoom-box zoom-3">
+                <img src="./img/movie-poster-zoom.jpg" alt="포스터 상세">
+                <p>ESC to close</p>
+            </div>
+            <div class="img-zoom-box zoom-4">
+                <div>
+                    <img src="./img/leaflet-zoom1.jpg" alt="리플렛 상세">
+                    <img src="./img/leaflet-zoom2.jpg" alt="리플렛 상세">
+                </div>
+                <p>ESC to close</p>
+            </div>
+        </div>
+        <footer>
+            <hr>
+            <p class="copyright">본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.
+                © 2025 Hong Chanhee. All Rights Reserved.</p>
+        </footer>
+        <div class="cursor-wrap">
+            <div class="cursor-inner">
+                <div class="cursor"></div>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>

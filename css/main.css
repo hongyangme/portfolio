@@ -30,6 +30,11 @@
     src: url('../font/Degarism\ Studio\ -\ Alliance\ No.1\ Light.otf') format('opentype');
     font-style: normal;
   }
+    @font-face {
+    font-family: 'pixelOperator';
+    src: url('../font/PixelOperator.ttf') format('truetype');
+    font-style: normal;
+  }
 
 /* 스타일 */
 html{
@@ -205,17 +210,18 @@ br{
     margin-top: -6rem;
 }
 .line-3{
-    background-color: #d5e0f1;
+    color: transparent; 
+    padding:  60px 50px;
+    margin-top: -5rem;   
+}
+.line-3{
     background: radial-gradient(
     ellipse at center,
-    #0918ee 0%,
+    #3473fa 0%,
     #ffffff 70%
     );
-    /* border-radius: 50%; */
     padding:  60px 50px;
-    margin-top: -4rem;
-    border-radius: 50%;
-    
+    margin-top: -5rem;   
 }
 
 /* 텍스트 슬라이드 */
@@ -232,13 +238,17 @@ br{
     color: #ffffff;
     animation: wave 0.5s forwards;
     transform: translateY(120%); 
+    text-shadow: 0 0 15px #3473fa;
+}
+.line-3 .w{
+    text-shadow: 0 0 4px #cacaca;
 }
 .w i{
     font-family: 'kenoky';
     font-weight: 100;
-    color: #e9e7e0;
-    font-size: 13vw;
-    letter-spacing: -15px;
+    font-size: 12vw;
+    letter-spacing: -10px;
+    color: #ffffff;
     /* margin: 5px 0; */
 }
 .w[style*="--i: 9;"]{
@@ -276,15 +286,14 @@ br{
     transform: translateY(100%);
 }
 .copyright p{
-    font-family: 'guton';
-    font-size: 1vw;
-    line-height: 1;
+    font-size: 1.2vw;
+    line-height: 0.3;
     white-space: pre-line;
-    /* background-color: #f0f0f0; */
     color: #8b8b8b;
     width: fit-content;
     padding: 10px 20px;
     font-weight: 100;
+    font-family: 'pixelOperator';
 }
 
 
@@ -340,7 +349,7 @@ br{
 .cursor{
     width: 1em;
     height: 1em;
-    background-color: #D83F31;
+    background-color: #033ab1;
     border-radius: 3em;
     
 }
